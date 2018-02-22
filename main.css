@@ -1,0 +1,51 @@
+body {
+  background-color: #17252a;
+  color: #def2f1;
+  font-family: sans-serif; }
+
+header {
+  text-transform: uppercase;
+  padding: 40px;
+  position: static; }
+  header h1 {
+    font-size: 20px;
+    float: left;
+    margin: 0;
+    transition: .3s all;
+    position: static; }
+  header ul {
+    float: right;
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    header ul li {
+      display: inline-block;
+      margin-left: 100px;
+      transition: .3s all; }
+  header h1:hover, header li:hover {
+    transform: translateY(-7px);
+    transition: .3s all;
+    cursor: pointer; }
+
+.Animation {
+  display: none;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center; }
+
+.homeAnimation {
+  background-image: url(images/space.gif); }
+
+.musicAnimation {
+  background-image: url(images/game.gif); }
+
+.storeAnimation {
+  background-image: url(images/matrix.gif); }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,73 @@
+$color1: rgb(23,37,42); //dark blue
+$color2: rgb(43,122,120); //dark teal
+$color3: rgb(58,175,169); //medium teal
+$color4: rgb(222,242,241); //pale teal
+$color5: rgb(254,255,255); //blue/White
+
+body {
+    background-color: $color1;
+    color: $color4;
+    font-family: sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+    padding: 40px;
+    position: static;
+    
+    h1 {
+        font-size: 20px;
+        float: left;
+        margin: 0;
+        transition: .3s all;
+        position: static;
+    }
+    
+    ul {
+        float: right;
+        font-size: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        
+        li {
+            display: inline-block;
+            margin-left: 100px;
+            transition: .3s all;
+
+        }
+    }
+    
+    h1:hover, li:hover {
+        transform: translateY(-7px);
+        transition: .3s all;
+        cursor: pointer;
+    }
+}
+
+.Animation {
+    display: none;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.homeAnimation {
+    background-image: url(images/space.gif);
+
+}
+
+.musicAnimation {
+    background-image: url(images/game.gif);
+}
+
+.storeAnimation {
+    background-image: url(images/matrix.gif);
+}
